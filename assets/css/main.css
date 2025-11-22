@@ -3863,7 +3863,19 @@ input, select, textarea {
 						text-decoration: none;
 						text-transform: uppercase;
 					}
-
+					/* Indent the nested <ul> a bit */
+					#menu ul.links li ul {
+						margin: 0;
+						padding-left: 1em;
+					}
+					
+					/* Style submenu links: slightly smaller + indented */
+					#menu ul.links li ul li a:not(.button) {
+						font-size: 0.7em;          /* smaller text */
+						line-height: 3em;          /* a bit more compact */
+						padding-left: 1.5em;       /* visual indent */
+						border-top: none;          /* optional: no divider line */
+					}
 					#menu ul.links > li > .button {
 						display: block;
 						margin: 0.5em 0 0 0;
